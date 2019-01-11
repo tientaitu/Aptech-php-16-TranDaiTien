@@ -1,0 +1,144 @@
+.Logo{
+    height: 150px;
+    width: auto;
+}
+.Height-header{
+    height: 150px;
+}
+.IMG{
+    height: 200px;
+    width: 100%;
+}
+.Skin-care{
+background-image: url("./anh slide/skin-care.jpg");
+  
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.Hair-care{
+    background-image: url("./anh slide/TÓC.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .Color-Content{
+    color:#7b9b5b;
+    font-family: 'Playfair Display', serif;
+  }
+.sanpham1{
+    background-image: url("./ảnh sp/sp1.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham2{
+    background-image: url("./ảnh sp/sp2.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham3{
+    background-image: url("./ảnh sp/sp3.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham4{
+    background-image: url("./ảnh sp/sp4.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham5{
+    background-image: url("./ảnh sp/sp5.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham6{
+    background-image: url("./ảnh sp/sp6.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham7{
+    background-image: url("./ảnh sp/sp7.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham8{
+    background-image: url("./ảnh sp/sp8.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham9{
+    background-image: url("./ảnh sp/sp9.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham10{
+    background-image: url("./ảnh sp/sp10.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham11{
+    background-image: url("./ảnh sp/sp11.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham12{
+    background-image: url("./ảnh sp/sp12.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sanpham13{
+    background-image: url("./ảnh sp/sp13.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.Logo-cuoi{
+    background-image: url("./anh slide/logo\ CN.png");
+    height:300px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}

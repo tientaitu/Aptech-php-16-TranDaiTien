@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- // <button id="js-button">get</button> -->
+    <div id="js-div-table"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('#js-button').click(function () {
+            $.get("./data.json", function (response) {
+                console.log(response);
+                $("#js-div-table").before(
+                    '<h1 class="d-flex justify-content-center text-info">' + response.message +
+                    "</h1>"
+                );
+                var table = '<table id="js-table" class="table table-bordered"></table>';
+                $("#js-div-table").append(table);
+                var thead = '<thead id="js-thead"></thead>';
+                $(thead).appendTo("#js-table");
+                var tr = '<tr id="js-tr-head"></tr>';
+                $(tr).appendTo("#js-thead");
+                var th =
+                    "<th> id </th> <th> name </th> <th> email </th> <th> password </th> <th> created_at </th> <th> updated_at </th>";
+                $(th).appendTo("#js-tr-head");
+                var tbody = '<tbody id="#js-tbody"></tbody>';
+                $("#js-thead").after(tbody);
+
+                var u = response.users;
+                u.forEach(function (user, i) {
+                    var trBody = '<tr id="js-tr-body-' + i + '"></tr>';
+                    $(trBody).appendTo("tbody");
+
+                    var tdBody =
+                        " <td>" +
+                        user.id +
+                        "</td>" +
+                        "<td>" +
+                        user.name +
+                        "</td>" +
+                        "<td>" +
+                        user.email +
+                        "</td>" +
+                        "<td>" +
+                        user.password +
+                        "</td>" +
+                        "<td>" +
+                        user.created_at +
+                        "</td>" +
+                        "<td>" +
+                        user.updated_at +
+                        "</td>";
+                    $("#js-tr-body-" + i).append(tdBody);
+                });
+            });
+
+            // });
+        });
+    </script>
+</body>
+
+</html>

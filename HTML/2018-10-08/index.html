@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <button id="btn1">click</button>
+    <div id="js-div-table"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- <script>
+        var p = document.createElement('h1');
+        var t = document.createTextNode('Tran Dai Tien');
+        p.appendChild(t);
+        document.body.appendChild(p);
+        var p = document.createElement('p');
+        var textp = document.createTextNode('Age: 23');
+        p.appendChild(textp);
+        document.body.appendChild(p);
+
+
+
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('p').append('<b>Tran Dai Tien </b>');
+            });
+            $('btn1').click(function () {
+                $('p').after('mọi chuyện rồi sẽ ổn thôi ')
+            });
+
+        });
+
+    </script> -->
+
+    <script>
+
+        // phần header 
+        var table ='<table id="js-table" class="table"></table> ';
+        $('#js-div-table').append(table);
+        var thead ='<thead id="js-thead" class="" ></thead> ';
+        $(thead).appendTo('#js-table');
+        var tr ='<tr id="js-tr-head"></tr>';
+        $(tr).appendTo('#js-thead');
+        var th ='<th>#</th><th>NAME</th><th>Email<th>';
+        $(th).appendTo('#js-tr-head');
+        
+//     phần body 
+        var tbody ='<tbody id="js-tbody"  ></tbody>';
+        $('#js-thead').after(tbody);
+        var trbody='<tr id="tr-body" ></tr>';
+        $(trbody).appendTo('#js-tbody');
+        var thbody='<th>1</th>';
+        var tdbody='<td>Tiến</td> <td>trandaitien1718@gmmail.com</td>';
+        // $(thbody,tdbody).appendTo('#tr-body'); appendTo chỉ cho một đối số 
+        $('#tr-body').append(thbody,tdbody);
+    </script>
+
+</body>
+
+</html>
