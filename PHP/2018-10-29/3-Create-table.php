@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "aptech_php_15_css4";
+$dbname = "aptech_php_16";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -10,6 +10,8 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+//include '1-connect.php';
+
 // sql to create table
 $sql = "CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY, 

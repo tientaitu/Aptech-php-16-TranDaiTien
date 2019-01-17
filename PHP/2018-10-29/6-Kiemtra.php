@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "aptech_php_15_css4";
+$dbname = "aptech_php_16_css1";
 
 // Create connection
  $conn = mysqli_connect($servername, $username, $password, $dbname);

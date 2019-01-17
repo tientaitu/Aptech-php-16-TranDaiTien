@@ -2,13 +2,15 @@
 $servername ="localhost";
 $username ="root";
 $password="";
-$dbname="aptech_php_15_css4";
+$dbname="aptech_php_16";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+//include '1-connect.php';
+
 $sql = "INSERT INTO users (name, email, password)
 VALUES 
 ('tran dai tien','trandaitien@gmail.com',1),
@@ -25,3 +27,5 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
+
+

@@ -2,7 +2,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'aptech_php_15_ss4';
+$dbname = 'aptech_php_16';
 
 $connect = mysqli_connect($servername, $username, $password, $dbname);
 if (!$connect) {
